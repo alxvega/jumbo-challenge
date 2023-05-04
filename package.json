@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "puppeteer": "^20.1.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.39.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

@@ -39,16 +39,16 @@ const authenticate = async (driver, email, password) => {
     "//button[@class='primary-btn' and @type='submit']/span[@class='btn-span-enter' and text()='Ingresa']"
   );
   await loginButtonElemtn.click();
-  await driver.screenshot({ path: "auth-test.png", fullPage: false });
   console.log("Authenticated");
 };
 
 // Save cookies to a local file
 const saveCookies = async (driver) => {
   await driver.waitForTimeout(5000);
+  await driver.screenshot({ path: "./output/auth-test.png", fullPage: false });
   const cookies = await driver.cookies();
   const cookieJson = JSON.stringify(cookies, null, 2);
-  await fs.writeFile("./cookies.json", cookieJson);
+  await fs.writeFile("./output/cookies.json", cookieJson);
   console.log("Saved cookies to local file.");
 };
 

@@ -47,5 +47,5 @@ docker build -t jumbo-authenticator .
 Start the container with the running script:
 
 ```
-docker run --rm -v "$(pwd):/app" --name jumboauth jumbo-login
+docker run --rm -v "$(pwd)/output:/app/output" --name jumboauth jumbo-login
 ```

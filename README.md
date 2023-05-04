@@ -41,7 +41,7 @@ This will run it in headful mode inside the container since there is a virtual d
 - Build the Docker container by running the following command:
 
 ```
-docker build -t jumbo-authenticator .
+docker build -t jumbo-login .
 ```
 
 Start the container with the running script:
